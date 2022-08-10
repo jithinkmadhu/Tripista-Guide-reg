@@ -1,0 +1,30 @@
+<br><br><br>
+<section class="py-0">
+    <!-- <div class="bg-holder d-none d-md-block" style="background-image:url(/public/img/gallery/wetfu.jpg);background-position:right bottom;background-size:contain;">
+    </div> -->
+    
+    <!--/.bg-holder-->
+
+    <div class="top-left">
+    <h1 class="disthead">Palakkad</h1>
+
+    </div>
+    <img src="/assets/img/gallery/palakkad123.jpg" alt="">
+
+    <div class="row">
+        <div class="col-sm-2" *ngFor="let guide of guides">
+          <div class="card" *ngIf="guide.district == 'Palakkad'">
+            <div class="card-body">
+              <h5 class="card-title">
+                {{guide.first_name}}
+                {{guide.last_name}}
+              </h5>
+              <p class="card-text">
+                {{guide.email}} <br>
+                {{guide.phone}} <br>
+                {{guide.district}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
